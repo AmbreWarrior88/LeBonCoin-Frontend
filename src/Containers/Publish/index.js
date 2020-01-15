@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
-const Offers = () => {
+const Publish = () => {
   return (
     <div className="container">
-      <Link to="/Offer">Offers</Link>
+      <Link to="/">Publish</Link>
     </div>
   );
 };
 
-export default Offers;
+export default Publish;

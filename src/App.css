@@ -1,1 +1,32 @@
+/* REPERES */
 
+.blue {
+  background-color: lightblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+/* RESET */
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL */
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.d-f {
+  display: flex;
+}
