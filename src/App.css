@@ -30,3 +30,50 @@ li {
 .d-f {
   display: flex;
 }
+
+.pv-50 {
+  padding: 50px 0;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+form input {
+  border: none;
+  width: 320px;
+  height: 44px;
+  background-color: #f4f6f7;
+  font-size: 1em;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.blue-button {
+  background-color: #4183d7;
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}

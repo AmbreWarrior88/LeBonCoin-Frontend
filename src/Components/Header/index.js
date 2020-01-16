@@ -12,9 +12,9 @@ const Header = () => {
         <li>
           <ul>
             <Link to="/">
-              <img className="logo" alt="" src={Logo}></img>
+              <img className="logo" alt="Logo LeBonCoin" src={Logo}></img>
             </Link>
-            <Link to="/publish">
+            <Link className="no-decoration" to="/publish">
               <button className="push-item">
                 <AddBox />
                 Déposer une annonce
