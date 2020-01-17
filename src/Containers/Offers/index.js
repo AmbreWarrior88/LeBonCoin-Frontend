@@ -7,9 +7,9 @@ const Offers = props => {
   const offers = props.offers;
 
   return (
-    <div className="container">
+    <div>
       <ReSearch />
-      <div className=" offers">
+      <div className=" offers container">
         {offers.map(offer => {
           return <OfferCard {...offer} />;
         })}
