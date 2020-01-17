@@ -5,7 +5,8 @@ import "../../App.css";
 const ReSearch = () => {
   return (
     <div>
-      <div className="container pv-50 position">
+      <div className="background" />
+      <div className="container pv-50 ">
         <div className="search-box box-shadow br-5 pv-50">
           <form className="items">
             <input type="text" placeholder="🔍 Que recherchez-vous ?" />

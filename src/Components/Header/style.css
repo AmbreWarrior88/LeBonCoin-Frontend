@@ -5,9 +5,6 @@
   align-items: center;
 }
 header {
-  border-bottom: 100px solid #f56b2a;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 .menu ul {
   display: flex;

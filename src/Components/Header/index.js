@@ -7,7 +7,7 @@ import { AddBox, Search, PersonOutline } from "@material-ui/icons";
 
 const Header = () => {
   return (
-    <header>
+    <header className="box-shadow">
       <ul className="container menu">
         <li className=" left-menu">
           <ul>
