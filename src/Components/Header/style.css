@@ -18,6 +18,7 @@ header {
   object-fit: contain;
   width: 167px;
   height: 70px;
+  margin-right: 20px;
 }
 
 .push-item {
@@ -28,13 +29,26 @@ header {
   display: flex;
   color: white;
   font-size: 1em;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.push-item:hover {
+  background-color: #d96629;
 }
 
 .research {
   background: none;
   border: none;
   font-size: 1em;
-  border-bottom: 3px solid #f56b2a;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-bar {
+  border-bottom: 4px solid #f56b2a;
+  padding-bottom: -40px;
 }
 
 .login {

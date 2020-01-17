@@ -7,7 +7,7 @@ const ReSearch = () => {
     <div>
       <div className="container pv-50 position">
         <div className="search-box box-shadow br-5 pv-50">
-          <form>
+          <form className="items">
             <input type="text" placeholder="🔍 Que recherchez-vous ?" />
             <button className="blue-button">Rechercher</button>
           </form>

@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <ul className="container menu">
-        <li>
+        <li className=" left-menu">
           <ul>
             <Link to="/">
               <img className="logo" alt="Logo LeBonCoin" src={Logo}></img>
@@ -20,10 +20,13 @@ const Header = () => {
                 Déposer une annonce
               </button>
             </Link>
-            <button className="research">
-              <Search />
-              Rechercher
-            </button>
+            <Link to="/" className="no-decoration">
+              <button className="research">
+                <Search />
+                Rechercher
+              </button>
+              <div className="bottom-bar" />
+            </Link>
           </ul>
         </li>
         <li className="login">

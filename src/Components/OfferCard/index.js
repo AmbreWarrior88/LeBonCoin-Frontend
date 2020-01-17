@@ -14,7 +14,7 @@ const OfferCard = props => {
         <div className="bg-silver d-flex">
           <img
             alt="Photo de l'annonce"
-            src={props.pictures === false ? Photo : props.pictures}
+            src={props.pictures === null ? Photo : props.pictures}
           />
         </div>
         <div className="description pl-15">

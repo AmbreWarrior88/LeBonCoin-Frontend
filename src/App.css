@@ -20,6 +20,15 @@ li {
   padding: 0;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
 /* GLOBAL */
 
 .container {

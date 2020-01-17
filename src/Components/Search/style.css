@@ -4,8 +4,14 @@
   width: 768px;
   margin: 0 auto;
   text-align: center;
+  background-color: white;
 }
 
 .position {
   margin-top: -120px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
 }
