@@ -5,7 +5,7 @@ import Logo from "../../images/logo-leboncoin.png";
 import "./style.css";
 import { AddBox, Search, PersonOutline } from "@material-ui/icons";
 
-const Header = () => {
+const Header = props => {
   return (
     <header className="box-shadow">
       <ul className="container menu">
@@ -29,7 +29,12 @@ const Header = () => {
             </Link>
           </ul>
         </li>
-        <li className="login">
+        <li
+          className="login"
+          onClick={() => {
+            props.setModal(true);
+          }}
+        >
           <PersonOutline />
           <span>Se connecter</span>
         </li>

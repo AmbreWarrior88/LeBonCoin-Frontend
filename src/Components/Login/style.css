@@ -1,0 +1,43 @@
+/* LOGIN */
+
+.page {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #f56b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.connexion {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 2px solid #f56b2a;
+}
+
+.title-input {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.modal-close {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
