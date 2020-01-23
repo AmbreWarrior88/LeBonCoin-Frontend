@@ -9,8 +9,12 @@ const ReSearch = () => {
       <div className="container pv-50 ">
         <div className="search-box box-shadow br-5 pv-50">
           <form className="items">
-            <input type="text" placeholder="🔍 Que recherchez-vous ?" />
-            <button className="blue-button">Rechercher</button>
+            <input
+              className="search-input"
+              type="text"
+              placeholder="🔍 Que recherchez-vous ?"
+            />
+            <button className="blue-button search-button">Rechercher</button>
           </form>
         </div>
       </div>

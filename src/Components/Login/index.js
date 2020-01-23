@@ -31,9 +31,9 @@ const Login = props => {
       ></input>
       <p>Vous n'avez pas de compte?</p>
       <Link
-        to="/user/sign_up"
+        to="/sign_up"
         onClick={() => {
-          props.setIsModalDisplayed(false);
+          props.setModal(false);
         }}
       >
         <button className="blue-button">Créer un compte</button>

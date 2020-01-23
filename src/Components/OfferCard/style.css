@@ -1,24 +1,5 @@
 /* OFFERCARD */
 
-.bg-silver {
-  background-color: silver;
-}
-
-.title {
-  font-size: 22px;
-  color: black;
-}
-
-.price {
-  color: #f56b2a;
-  font-size: 20px;
-}
-
-.date {
-  color: black;
-  font-size: 16px;
-}
-
 .offers .description {
   flex: 1;
 }

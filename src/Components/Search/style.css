@@ -10,7 +10,8 @@
 
 .items {
   display: flex;
-  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .background {
@@ -20,4 +21,13 @@
   background-color: #f56b2a;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+}
+
+.search-input {
+  padding-left: 20px;
+  flex: 1;
+}
+
+.search-button {
+  margin-left: 20px;
 }

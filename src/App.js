@@ -7,6 +7,7 @@ import Offers from "./Containers/Offers/index";
 import Offer from "./Containers/Offer/index";
 import Publish from "./Containers/Publish/index";
 import Login from "./Components/Login/index";
+import SignUp from "./Containers/SignUp/index";
 import "./App.css";
 import "./Components/Login/style.css";
 import { Clear } from "@material-ui/icons";
@@ -54,6 +55,9 @@ function App() {
         </Route>
         <Route path="/Offer">
           <Offer />
+        </Route>
+        <Route path="/sign_up">
+          <SignUp />
         </Route>
         <Route path="/publish">
           <Publish />

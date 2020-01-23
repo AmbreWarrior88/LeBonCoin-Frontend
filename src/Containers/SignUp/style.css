@@ -1,0 +1,14 @@
+/* SIGNUP */
+
+.signup-page {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 576px;
+  background: white;
+  margin: 44px auto;
+}
+
+.logo-color {
+  color: #4183d7;
+}
