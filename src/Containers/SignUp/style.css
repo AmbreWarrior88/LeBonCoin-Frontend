@@ -9,6 +9,30 @@
   margin: 44px auto;
 }
 
+.left {
+  margin-left: 50px;
+  flex: 2;
+  margin-right: 100px;
+}
+
+.paragraph {
+  align-items: center;
+}
+
 .logo-color {
   color: #4183d7;
+  flex: 1;
+}
+
+.words {
+  flex: 4;
+}
+
+.right {
+  margin-right: 50px;
+  flex: 1;
+}
+
+.left-password {
+  margin-right: 20px;
 }

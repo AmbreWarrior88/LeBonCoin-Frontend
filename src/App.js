@@ -53,7 +53,7 @@ function App() {
         <Route exact path="/">
           <Offers offers={offers} />
         </Route>
-        <Route path="/Offer">
+        <Route path="/offer/:id">
           <Offer />
         </Route>
         <Route path="/sign_up">

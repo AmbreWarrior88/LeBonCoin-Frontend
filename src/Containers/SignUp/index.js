@@ -15,61 +15,79 @@ const SignUp = () => {
   const [checkBox, setCheckBox] = useState(false);
 
   return (
-    <div className="signup-page box-shadow">
-      <span>
-        <p>Pourquoi créer un compte?</p>
-        <div>
+    <section className="signup-page box-shadow">
+      <div className="left">
+        <h2>Pourquoi créer un compte?</h2>
+        <div className="paragraph d-f">
           <QueryBuilder className="logo-color" />
-          <p>Gagner du temps</p>
-          <p>
-            Publiez vos annonces rapidement, avec vos informations pré-remplis
-            chaque fois que vous souhaitez déposer une nouvelle annonce.
-          </p>
-        </div>
-        <div>
-          <NotificationsOutlined className="logo-color" />
-          <p>Soyez les premiers informés</p>
-          <p>
-            Créer des alertes Immo ou Emploi et ne manquez jamais l'annonce qui
-            vous intéresse.
-          </p>
-        </div>
-        <div>
-          <RemoveRedEyeOutlined className="logo-color" />
-          <p>Visibilité</p>
-          <p>
-            Suivez les statistiques de vos anonces (nombre de fois où votre
-            annonce a été vue, nombre de contrats reçus).
-          </p>
-        </div>
-      </span>
-      <span>
-        <form>
-          <p>Créer un compte</p>
-          <p>Pseudo *</p>
-          <input type="text" value={userName} />
-          <p>Adresse Email *</p>
-          <input type="email" value={email} />
-          <span>
-            <p>Mot de passe *</p>
-            <input type="password" value={password} />
-          </span>
-          <span>
-            <p>Confirmer le mot de passe *</p>
-            <input type="password" value={passwordConfirm} />
-          </span>
-          <div>
-            <input type="checkbox" value={checkBox} />
+
+          <div className="words">
+            <h3>Gagner du temps</h3>
             <p>
-              "J'accepte les Conditions Générales de Vente et les Conditions
-              Générales d'Utilisation"
+              Publiez vos annonces rapidement, avec vos informations pré-remplis
+              chaque fois que vous souhaitez déposer une nouvelle annonce.
             </p>
           </div>
+        </div>
+        <div className="paragraph d-f">
+          <NotificationsOutlined className="logo-color" />
+          <div className="words">
+            <h3>Soyez les premiers informés</h3>
+            <p>
+              Créer des alertes Immo ou Emploi et ne manquez jamais l'annonce
+              qui vous intéresse.
+            </p>
+          </div>
+        </div>
+        <div className="paragraph d-f">
+          <RemoveRedEyeOutlined className="logo-color" />
+          <div className="words">
+            <h3>Visibilité</h3>
+            <p>
+              Suivez les statistiques de vos anonces (nombre de fois où votre
+              annonce a été vue, nombre de contrats reçus).
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <button className="blue-button">Créer mon Compte Personnel</button>
+      <div className="right">
+        <form>
+          <h2 className="title">Créer un compte</h2>
+          <h4>Pseudo *</h4>
+          <input className="input" type="text" value={userName} />
+          <h4>Adresse Email *</h4>
+          <input className="input" type="email" value={email} />
+
+          <div className="d-f">
+            <span className="left-password">
+              <h4>Mot de passe *</h4>
+              <input className="input" type="password" value={password} />
+            </span>
+            <span>
+              <h4>Confirmer *</h4>
+              <input
+                className="input"
+                type="password"
+                value={passwordConfirm}
+              />
+            </span>
+          </div>
+
+          <div>
+            <input type="checkbox" value={checkBox} id="csg" />
+            <label for="csg">
+              J'accepte les Conditions Générales de Vente et les Conditions
+              Générales d'Utilisation
+            </label>
+          </div>
+
+          <button className="blue-button button">
+            Créer mon Compte Personnel
+          </button>
         </form>
-      </span>
-    </div>
+      </div>
+    </section>
   );
 };
 

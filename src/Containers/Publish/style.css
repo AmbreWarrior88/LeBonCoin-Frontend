@@ -1,0 +1,36 @@
+/* PUBLISH */
+
+.publish-page {
+  margin: 40px 300px;
+}
+
+.publish {
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 2px solid #f56b2a;
+}
+
+.announce-input {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+}
+
+.price-input {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  width: 200px;
+}
+
+.choose-file {
+  margin-bottom: 20px;
+}
+
+.submit {
+  margin-bottom: 20px;
+}
