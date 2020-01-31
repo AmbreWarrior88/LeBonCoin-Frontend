@@ -17,8 +17,8 @@ const Offer = () => {
       const response = await axios.get(
         "https://leboncoin-api.herokuapp.com/api/offer/" + id
       );
+      console.log(response.data);
       setOffer(response.data);
-
       setIsLoading(false);
     };
     fetchData();
@@ -49,7 +49,7 @@ const Offer = () => {
           </div>
           <aside className="mt-30 box-shadow">
             <div>
-              <div className="username">{offer.creator}</div>
+              <div className="username">{offer.creator.account.username}</div>
               <button className="number-offer">Annonces</button>
               <button className="shop">
                 <ShoppingCartOutlined fontSize="20px" />

@@ -5,7 +5,7 @@ import OfferCard from "../../Components/OfferCard/index";
 
 const Offers = props => {
   const offers = props.offers;
-
+  console.log(...offers);
   return (
     <div>
       <ReSearch />
