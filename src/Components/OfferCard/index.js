@@ -8,7 +8,7 @@ const OfferCard = props => {
   return (
     <div>
       <Link
-        to="/offer/"
+        to={`/offer/${props._id}`}
         className="d-f box-shadow overflow-hidden br-5 mb-20 no-decoration"
       >
         <div className="bg-silver d-flex">
