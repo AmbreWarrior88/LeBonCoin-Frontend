@@ -24,6 +24,8 @@ const Offer = () => {
     fetchData();
   }, []);
 
+  const date = new Date(offer.created);
+
   return (
     <div>
       {isLoading ? (
@@ -32,14 +34,18 @@ const Offer = () => {
         <div className="container d-f">
           <div>
             <div className="offer-card box-shadow mt-30">
-              <div className="bg-silver center picture">
-                <img src={offer.pictures} alt="" />
-              </div>
+              <img
+                className="bg-silver center picture"
+                src={offer.pictures}
+                alt=""
+              />
 
               <div className="infos">
                 <p className="title">{offer.title}</p>
-                <p className="price">{offer.price}</p>
-                <p className="date">{offer.created}</p>
+                <p className="price">{offer.price}€</p>
+                <p className="date">
+                  {date.toLocaleDateString()} à {date.toLocaleTimeString()}
+                </p>
               </div>
             </div>
             <div>
@@ -47,13 +53,14 @@ const Offer = () => {
               <p className="offer-description">{offer.description}</p>
             </div>
           </div>
-          <aside className="mt-30 box-shadow">
-            <div>
-              <div className="username">{offer.creator}</div>
-              <button className="number-offer">Annonces</button>
+          <aside className="mt-30 box-shadow d-f">
+            <div className="wrap-offer">
+              <p className="username ">{offer.creator.account.username}</p>
+              <p className="number-offer ">17 annonces en ligne</p>
+
               <button className="shop">
-                <ShoppingCartOutlined fontSize="20px" />
-                Acheter
+                <ShoppingCartOutlined />
+                <span className="button-item">Acheter</span>
               </button>
             </div>
           </aside>

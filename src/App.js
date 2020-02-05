@@ -11,12 +11,17 @@ import SignUp from "./Containers/SignUp/index";
 import "./App.css";
 import "./Components/Login/style.css";
 import { Clear } from "@material-ui/icons";
+import Cookies from "js-cookie";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [offers, setOffers] = useState([]);
 
   const [modal, setModal] = useState(false);
+
+  const token = Cookies.get("token");
+
+  const [user, setUser] = useState({ token: token });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,11 +49,11 @@ function App() {
             <Clear />
           </div>
           <div className="modal-content">
-            <Login setModal={setModal} />
+            <Login setModal={setModal} setUser={setUser} />
           </div>
         </div>
       )}
-      <Header setModal={setModal} />
+      <Header setModal={setModal} user={user} setUser={setUser} />
       <Switch>
         <Route exact path="/">
           <Offers offers={offers} />

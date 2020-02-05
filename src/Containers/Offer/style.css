@@ -2,14 +2,16 @@
 .picture {
   width: 100%;
   height: 450px;
+  object-fit: contain;
 }
 
 aside {
   width: 300px;
   height: 200px;
-
   margin-left: 15px;
+  flex-direction: column;
 }
+
 .offer > div {
   display: flex;
 }
@@ -53,10 +55,11 @@ aside {
 }
 
 .number-offer {
-  border: none;
   color: #4183d7;
   font-weight: bold;
   font-size: 19px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
 }
 
 .shop {
@@ -72,6 +75,11 @@ aside {
   justify-content: center;
 }
 
-aside div {
-  margin: 20px;
+.button-item {
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+.wrap-offer {
+  margin: auto;
 }
