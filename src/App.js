@@ -62,7 +62,7 @@ function App() {
           <Offer />
         </Route>
         <Route path="/sign_up">
-          <SignUp />
+          <SignUp user={user} setUser={setUser} />
         </Route>
         <Route path="/publish">
           <Publish />

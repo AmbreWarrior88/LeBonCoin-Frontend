@@ -58,7 +58,12 @@ const Offer = () => {
               <p className="username ">{offer.creator.account.username}</p>
               <p className="number-offer ">17 annonces en ligne</p>
 
-              <button className="shop">
+              <button
+                className="shop"
+                onClick={() => {
+                  alert("Article ajouté à votre panier avec succès!");
+                }}
+              >
                 <ShoppingCartOutlined />
                 <span className="button-item">Acheter</span>
               </button>
